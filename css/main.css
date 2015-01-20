@@ -64,13 +64,13 @@ textarea {
 body{
     color: #444545;
    }
+.navbar{
+        margin-bottom: 0px;
+        }
 .thumbnail{
     text-align: center;
     border-color: transparent;
     padding: 0 20px;
-}
-.thumbnail .caption{
-    padding: 20px;
 }
 .navbar-default{
     background-color: transparent;
@@ -113,6 +113,9 @@ body{
 }
 
 @media screen and (min-width: 768px){
+    .navbar{
+        margin-bottom: 0;
+        }
     .jumbotron h1, .jumbotron .h1 {
         font-size: 47px;
         max-width: 850px;
