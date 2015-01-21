@@ -63,6 +63,7 @@ textarea {
 
 body{
     color: #444545;
+    font-family: 'Titillium Web', sans-serif;
    }
 .navbar{
         margin-bottom: 0px;
@@ -78,6 +79,10 @@ body{
 }
 .navbar-default .navbar-nav>li>a{
     color: #06C5CE;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 .nav>li>a:hover, .nav>li>a:focus{
     background-color: transparent;
@@ -95,11 +100,26 @@ body{
 }
 .jumbotron{
     text-align: center;
+    margin-bottom: 0px;
+}
+.main-pic {
+    background: url("../img/fondo-mapa.jpg") no-repeat center;
+    background-size: cover;
+}
+.call-to-action{
+        background-color: white;
+    }
+.call-to-action .btn{
+    margin: 20px;
 }
 .btn-primary{
     border-color: transparent;
     background-color: #0BD2A6;
     border-radius: 0px;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, 
 .open>.dropdown-toggle.btn-primary{
@@ -123,6 +143,9 @@ body{
     }
     .jumbotron{
         padding: 135px 0;
+    }
+    .call-to-action{
+        padding: 50px 0;
     }
     .navbar-right{
         margin-top: 95px;
