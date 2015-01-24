@@ -122,12 +122,16 @@ body{
     background: url("../img/fondo-mapa-2-01.jpg") no-repeat center;
     background-size: cover;
 }
-.call-to-action .lighter, .form-group .lighter{
+.call-to-action .lighter, fieldset .lighter{
     opacity: .7;
     font-size: 16px;
     max-width: 380px;
     margin: 0 auto 0;
     font-weight: lighter;
+    text-align: center;
+}
+.form-container{
+    margin-top: 35px;
 }
 .call-to-action div{
     margin: 13px auto 10px;
