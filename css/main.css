@@ -209,6 +209,33 @@ h3{
     color: white;
     font-weight: lighter;
 }
+footer strong{
+    display: block;
+}
+
+footer span{
+    font-size: 33px;
+    width: 60px;
+    display: inline-block;
+}
+.social-media{
+    display: inline-block;
+    margin: 10px auto 0;
+}
+.social-media span{
+    color: #0BD2A6;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    background-color: ;
+}
+.social-media span:hover{
+    color: #03BBEA;
+}
+.social-box{
+    text-align: center;
+}
 
 @media screen and (min-width: 768px){
     .navbar{
