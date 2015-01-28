@@ -118,6 +118,18 @@ body{
     font-weight: 600;
     color: #09B29A;
 }
+.call-to-action .btn{
+    font-size: 24px;
+    margin: 26px;
+}
+.call-to-action-nav{
+    background-color:#0BD2A6;
+    color: white !important;
+    font-weight:600;
+}
+.call-to-action-nav:hover{
+    background-color:#09CDB5 !important;
+}
 .features{
     background: url("../img/fondo-mapa-2-01.jpg") no-repeat center;
     background-size: cover;
@@ -163,9 +175,7 @@ body{
 .call-to-action{
         background-color: white;
     }
-.call-to-action .btn{
-    margin: 20px;
-}
+   
 .btn-primary{
     border-color: transparent;
     background-color: #0BD2A6;
@@ -198,6 +208,10 @@ h3{
 .container{
     padding-bottom: 80px;
 }
+.footer-bg{
+    background-color: #F4F4ED;
+    padding-top: 85px;
+}
 .navbar .container{
     padding-bottom: 0px;
 }
@@ -228,13 +242,19 @@ footer span{
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
-    background-color: ;
 }
 .social-media span:hover{
     color: #03BBEA;
 }
 .social-box{
     text-align: center;
+}
+.social-box strong{
+    opacity: .5;
+}
+.social-box img{
+    width: 60px;
+    margin: 15px;
 }
 
 @media screen and (min-width: 768px){
