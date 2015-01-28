@@ -114,6 +114,20 @@ body{
     padding: 40px 0;
     background-color: transparent;
     height:389px; 
+    display: -webkit-box;
+      -webkit-box-orient: horizontal;
+      -webkit-box-pack: center;
+      -webkit-box-align: center;
+     
+      display: -moz-box;
+      -moz-box-orient: horizontal;
+      -moz-box-pack: center;
+      -moz-box-align: center;
+      
+      display: box;
+      box-orient: horizontal;
+      box-pack: center;
+      box-align: center;
 }
 .bg{
     background: url("../img/fondo-mapa.jpg") no-repeat center;
@@ -171,13 +185,6 @@ body{
     position: absolute;
     bottom: 0px;
 }
-.jumbotron-pins{
-    width: 100%;
-    height: 80%;
-    background: url("../img/pines.png") no-repeat center bottom;
-    position: absolute;
-    top: 0px;
-}
 .call-to-action{
         background-color: white;
     }
@@ -195,6 +202,9 @@ body{
 .open>.dropdown-toggle.btn-primary{
     background-color: #09CDB5;
     border-color: transparent;
+}
+h1{
+    font-size: 28px;
 }
 h2{
     font-size: 26px;
@@ -265,6 +275,13 @@ footer span{
 }
 
 @media screen and (min-width: 768px){
+    .jumbotron-pins{
+        width: 100%;
+        height: 80%;
+        background: url("../img/pines.png") no-repeat center bottom;
+        position: absolute;
+        top: 0px;
+    }
     .navbar{
         margin-bottom: 0;
         }
@@ -291,6 +308,9 @@ footer span{
         background-color: white;
         background: url("../img/logo-emprende.png") no-repeat;
         background-size: 65%;
+    }
+    .main-pic {
+        display: block;
     }
 }
 /* ==========================================================================
