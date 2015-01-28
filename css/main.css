@@ -94,10 +94,16 @@ body{
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
     color: #0092CC;
 }
-.navbar-brand img{
-    width: 75%;
-    padding: 10px;
+.navbar-brand div{
+    width: 170px;
+    height: 45px;
+    padding: 0;
     background-color: white;
+    background: url("../img/logo-emprende-min.png") no-repeat;
+    background-size: 46%;
+}
+.navbar-brand{
+    padding: 0px;
 }
 .jumbotron{
     text-align: center;
@@ -262,6 +268,9 @@ footer span{
     .navbar{
         margin-bottom: 0;
         }
+    .navbar-brand{
+        padding: 20px;
+    }
     .jumbotron h1, .jumbotron .h1 {
         font-size: 47px;
         max-width: 850px;
@@ -274,6 +283,14 @@ footer span{
     }
     .navbar-right{
         margin-top: 95px;
+    }
+    .navbar-brand div{
+        width: 170px;
+        height: 120px;
+        padding: 10px;
+        background-color: white;
+        background: url("../img/logo-emprende.png") no-repeat;
+        background-size: 65%;
     }
 }
 /* ==========================================================================
