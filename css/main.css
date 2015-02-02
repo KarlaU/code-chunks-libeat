@@ -151,7 +151,7 @@ body{
     background-color:#09CDB5 !important;
 }
 .features{
-    background: url("../img/fondo-mapa-2-01.jpg") no-repeat center;
+    background:#F4F4ED;
     background-size: cover;
 }
 .call-to-action .lighter, fieldset .lighter{
