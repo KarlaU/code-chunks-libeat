@@ -185,6 +185,10 @@ body{
     position: absolute;
     bottom: 0px;
 }
+.jumbotron p{
+    max-width: 540px;
+    margin: 0 auto 15px;
+}
 .call-to-action{
         background-color: white;
     }
