@@ -1,469 +1,179 @@
-/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
-
-html,
-button,
-input,
-select,
-textarea {
-    color: #222;
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 1s;
 }
-
-html {
-    font-size: 1em;
-    line-height: 1.4;
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 1s;
 }
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
 }
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
 }
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+.carousel-fade .carousel-control {
+  z-index: 2;
 }
-
-audio,
-canvas,
-img,
-video {
-    vertical-align: middle;
-}
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-textarea {
-    resize: vertical;
-}
-
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
 body{
-    color: #444545;
-    font-family: 'Titillium Web', sans-serif;
-   }
-.navbar{
-        margin-bottom: 0px;
-        }
-.thumbnail{
-    text-align: center;
-    border-color: transparent;
-    padding: 0 20px;
-    background-color: transparent;
+  background-color: #B5488B;
+  font-family: 'Nunito', sans-serif;
+  position: relative;
+  color: white;
+  text-align: center;
 }
-.navbar-default{
-    background-color: transparent;
-    border-bottom: none;
+.ingreso-face{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: lighter;
+  border:solid 1px white;
+  padding: 15px 25px;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
-.navbar-default .navbar-nav>li>a{
-    color: #06C5CE;
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+.contenedor-botones{
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  margin-left: -148.5px;
 }
-.nav>li>a:hover, .nav>li>a:focus{
-    background-color: transparent;
+html,
+body,
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.navbar-default a:hover,.navbar-default a:focus{
-    color: #0092CC;
+.item div{
+  background-image:url("../img/fondo-violeta-08.png");
+  background-position: center;
+  height: 100%;
+  width:100%;
+  opacity: .95;
 }
-.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
-    color: #0092CC;
+.item div p{
+  display: block;
+  max-width: 250px;
+  font-weight: lighter;
+  font-size: 18px;
 }
-.navbar-brand div{
-    width: 170px;
-    height: 45px;
-    padding: 0;
-    background-color: white;
-    background: url("../img/logo-emprende-min.png") no-repeat;
-    background-size: 46%;
+.vertical-centered-text {
+  -ms-display: flex;
+  display: flex;
+  /* alineacion vertical */
+  align-items: center;
+   /* alineacion horizontal */
+  justify-content: center;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
 }
-.navbar-brand{
-    padding: 0px;
+figure p{
+  margin-top: 20px;
+  color: white;
 }
-.jumbotron{
-    text-align: center;
-    margin-bottom: 0px;
-    position: relative;
-}
-.main-pic {
-    padding: 40px 0;
-    background-color: transparent;
-    height:389px; 
-    display: -webkit-box;
-      -webkit-box-orient: horizontal;
-      -webkit-box-pack: center;
-      -webkit-box-align: center;
-     
-      display: -moz-box;
-      -moz-box-orient: horizontal;
-      -moz-box-pack: center;
-      -moz-box-align: center;
-      
-      display: box;
-      box-orient: horizontal;
-      box-pack: center;
-      box-align: center;
-}
-.bg{
-    background: url("../img/fondo-mapa.jpg") no-repeat center;
-    background-size: cover;
-    position: relative;
-}
-.call-to-action .call-to-action-title{
-    font-weight: 600;
-    color: #09B29A;
-}
-.call-to-action .btn{
-    font-size: 24px;
-    margin: 26px;
-}
-.call-to-action-nav{
-    background-color:#0BD2A6;
-    color: white !important;
-    font-weight:600;
-}
-.call-to-action-nav:hover{
-    background-color:#09CDB5 !important;
-}
-.features{
-    background:#F4F4ED;
-    background-size: cover;
-}
-.call-to-action .lighter, fieldset .lighter{
-    opacity: .7;
-    font-size: 16px;
-    max-width: 380px;
-    margin: 0 auto 0;
-    font-weight: lighter;
-    text-align: center;
-}
-.form-container{
-    margin-top: 35px;
-}
-.call-to-action div{
-    margin: 13px auto 10px;
-    width: 33px;
-    height: 33px;
-}
-.call-to-action-icon-1{
-    background: url("../img/benefits-icon-1.png") no-repeat center;
-    background-size: contain;
-}
-.call-to-action-icon-2{
-    background: url("../img/benefits-icon-2.png") no-repeat center;
-    background-size: contain;
-}
-.jumbotron-arrow{
-    width: 100%;
-    height: 30px;
-    background: url("../img/flecha-01.png") no-repeat center bottom;
-    position: absolute;
-    bottom: 0px;
-}
-.jumbotron p{
-    max-width: 540px;
-    margin: 0 auto 15px;
-}
-.call-to-action{
-        background-color: white;
-    }
-   
-.btn-primary{
-    border-color: transparent;
-    background-color: #0BD2A6;
-    border-radius: 0px;
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-}
-.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, 
-.open>.dropdown-toggle.btn-primary{
-    background-color: #09CDB5;
-    border-color: transparent;
-}
-h1{
-    font-size: 28px;
-}
-h2{
-    font-size: 22px;
-    max-width: 850px;
-    margin: 85px auto 36px;
-    font-weight: 600;
-    color: #03BBEA;
-}
-.form-control{
-    border-radius: 0px;
-}
-h3{
-    font-size: 20px;
-    margin-bottom: 0;
-    opacity: .7;
-    font-weight: lighter;
-}
-.container{
-    padding-bottom: 80px;
-}
-.footer-bg{
-    background-color: #F4F4ED;
-    padding-top: 85px;
-}
-.navbar .container{
-    padding-bottom: 0px;
-}
-.caption p{
-    opacity: .8;
-}
-.jumbotron h1, .jumbotron .h1 {
-    margin: 0 auto 17px;
-    color: white;
-    font-weight: lighter;
-}
-footer strong{
-    display: block;
-    margin-top: 20px;
-}
+.animated { 
+    -webkit-animation-duration: 1s; 
+    animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+} 
 
-footer span{
-    font-size: 33px;
-    width: 60px;
-    display: inline-block;
+@-webkit-keyframes fadeInUp { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: translateY(20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateY(0); 
+    } 
+} 
+
+@keyframes fadeInUp { 
+    0% { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+} 
+
+.fadeInUp { 
+    -webkit-animation-name: fadeInUp; 
+    animation-name: fadeInUp; 
 }
-.social-media{
-    display: inline-block;
-    margin: 10px auto 0;
+.animated { 
+    -webkit-animation-duration: 0.7s; 
+    animation-duration: 0.7s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-timing-function: ease-in-out; 
+    animation-timing-function: ease-in-out; 
+} 
+
+@-webkit-keyframes wobble { 
+  0% { -webkit-transform: translateX(0%); } 
+  15% { -webkit-transform: translateX(-25%) rotate(-5deg); } 
+  30% { -webkit-transform: translateX(20%) rotate(3deg); } 
+  45% { -webkit-transform: translateX(-15%) rotate(-3deg); } 
+  60% { -webkit-transform: translateX(10%) rotate(2deg); } 
+  75% { -webkit-transform: translateX(-5%) rotate(-1deg); } 
+  100% { -webkit-transform: translateX(0%); } 
+} 
+@keyframes wobble { 
+  0% { transform: translateX(0%); } 
+  15% { transform: translateX(-25%) rotate(-5deg); } 
+  30% { transform: translateX(20%) rotate(3deg); } 
+  45% { transform: translateX(-15%) rotate(-3deg); } 
+  60% { transform: translateX(10%) rotate(2deg); } 
+  75% { transform: translateX(-5%) rotate(-1deg); } 
+  100% { transform: translateX(0%); } 
+} 
+.wobble { 
+    -webkit-animation-name: wobble; 
+    animation-name: wobble; 
 }
-.social-media span{
-    color: #0BD2A6;
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+img{
+  width: 62px;
+  opacity: .9;
+  margin: 0 auto 0;
+  display: block;
 }
-.social-media span:hover{
-    color: #03BBEA;
+.logo-blanco{
+  width: 141px;
 }
-.social-box{
-    text-align: center;
+.vertical-centered-text .primer-slide p{
+  font-size: 13px;
+  margin-top: 8px;
+  max-width: 156px;
 }
-.social-box strong{
-    opacity: .5;
+.carousel-indicators{
+  display: none;
 }
-.social-box img{
-    width: 60px;
-    margin: 15px;
+figure .icono-chico{
+  width: 30px;
 }
-
-@media screen and (min-width: 768px){
-    h2{
-        font-size: 26px;
-    }
-    h3{
-        font-size: 24px;
-    }
-    .jumbotron-pins{
-        width: 100%;
-        height: 80%;
-        background: url("../img/pines.png") no-repeat center bottom;
-        position: absolute;
-        top: 0px;
-    }
-    .navbar{
-        margin-bottom: 0;
-        }
-    .navbar-brand{
-        padding: 20px;
-    }
-    .jumbotron h1, .jumbotron .h1 {
-        font-size: 47px;
-        max-width: 850px;
-    }
-    .jumbotron{
-        padding: 135px 0;
-    }
-    .call-to-action{
-        padding: 50px 0;
-    }
-    .navbar-right{
-        margin-top: 95px;
-    }
-    .navbar-brand div{
-        width: 170px;
-        height: 120px;
-        padding: 10px;
-        background-color: white;
-        background: url("../img/logo-emprende.png") no-repeat;
-        background-size: 65%;
-    }
-    .main-pic {
-        display: block;
-    }
+.item:nth-child(1){
+   background-image: url("../img/imagen-intro-0.jpg");
 }
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
+.item:nth-child(2){
+   background-image: url("../img/imagen-intro-1.jpg");
 }
-
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-
+.item:nth-child(3){
+  background-image: url("../img/imagen-intro-2.jpg");
 }
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    *text-indent: -9999px;
-}
-
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-}
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-.invisible {
-    visibility: hidden;
-}
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.clearfix {
-    *zoom: 1;
-}
-
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
-
-@media print {
-    * {
-        background: transparent !important;
-        color: #000 !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    @page {
-        margin: 0.5cm;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+.item:nth-child(4){
+  background-image: url("../img/imagen-intro-3.jpg");
 }
